@@ -1,0 +1,55 @@
+Recursion rules and time complexity
+
+| Recurrence         | Complexity     |
+| ------------------ | -------------- |
+| T(n) = T(n-1)      | O(n)           |
+| T(n) = T(n/2)      | O(log n)       |
+| T(n) = 2T(n-1)     | O(2ⁿ)          |
+| T(n) = 2T(n/2)     | O(n)           |
+| T(n) = 2T(n/2) + n | O(n log n)     |
+| T(n) = 4T(n/2)     | O(n²)          |
+| T(n) = aT(n/b)     | O(n^{log_b a}) |
+
+
+Tree growth and shrinking
+
+| Pattern | Depth | Growth |
+| ------- | ----- | ------ |
+| 2T(n-1) | n     | 2ⁿ     |
+| 2T(n/2) | log n | n      |
+
+Substring and subsequence rules and criteria
+
+| Feature               | Substring | Subsequence |
+| --------------------- | --------- | ----------- |
+| Must be continuous?   | ✅ Yes   | ❌ No     |
+| Order must stay same? | ✅ Yes     | ✅ Yes    |
+| Count for length n    | n(n+1)/2  | 2ⁿ          |
+
+Logic of subarray and subsequence
+
+| Concept     | Continuous? | Can Skip Elements? |
+| ----------- | ----------- | ------------------ |
+| Subarray    | ✅ Yes       | ❌ No               |
+| Subsequence | ❌ No        | ✅ Yes              |
+
+Logic for arrays, sliding window, hashmap/frequency
+
+| Clue in Problem              | Pattern        |
+| ---------------------------- | -------------- |
+| maximum / minimum element    | traversal      |
+| subarray of size k           | sliding window |
+| longest / smallest substring | sliding window |
+| duplicates / occurrences     | hash map / set |
+| two numbers sum to target    | hash map       |
+| sorted array pair problems   | two pointers   |
+
+Clues for solving DSA problem (Arrays)
+| Clue in problem                  | Pattern         |
+| -------------------------------- | --------------- |
+| sorted array                     | two pointers    |
+| subarray / substring size k      | sliding window  |
+| longest / smallest substring     | sliding window  |
+| duplicates / frequency           | hash map or set |
+| two numbers sum (unsorted array) | hash map        |
+
