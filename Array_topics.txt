@@ -1,0 +1,77 @@
+- Traversal
+    -> Traversal
+    -> find min
+    -> count elements
+- Time complexity:
+    -> O(n)
+
+- Sliding Window(Fixed)
+    
+    Trigger:
+        
+        ->subarray of size k
+        ->substring of size k
+
+    Key Formula:
+
+        -> new_sum = previous_sum - outgoing + incoming        
+
+
+- Sliding Window(Variable)
+
+    Trigger:
+
+        -> longest / shortest subarray        
+        -> sum <= k       
+        -> at most k       
+
+    Idea:
+
+        -> Expand Window
+        -> Shrink when condition breaks
+
+- Hash Map / Set
+
+    Trigger:
+
+        -> Duplicates
+        -> Frequency
+        -> Two sum
+        -> Count Occurrences
+
+    Example:
+
+        -> [1,2,3,1]
+
+- Two Pointers
+
+    Trigger:
+
+        -> sorted array + pair problems
+
+    Example:
+        
+        -> Target sum in sorted array
+
+- Binary Search
+
+    Trigger:
+
+        -> sorted array + searching
+
+    Time complexity:
+
+        -> O(log n)
+
+- Prefix sum
+
+    Trigger:
+
+        -> range sum
+        -> subarray sum problems
+
+    Formula:
+
+        -> sum(i -> j) = prefix[j] - prefix[i-1]
+
+        
