@@ -53,3 +53,13 @@ Clues for solving DSA problem (Arrays)
 | duplicates / frequency           | hash map or set |
 | two numbers sum (unsorted array) | hash map        |
 
+| Question Type   | Pattern        |
+| --------------- | -------------- |
+| Pair sum        | HashMap        |
+| Duplicate       | Set            |
+| Subarray        | Sliding Window |
+| Character count | Dictionary     |
+| Maximum sum     | Kadane         |
+
+
+

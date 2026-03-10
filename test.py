@@ -64,3 +64,80 @@
 #     if window_sum > max_sum:
 #         max_sum = window_sum
 # print(max_sum)
+
+# arr=[1,3,2,5,1,1,2,3]
+# k = 3
+
+# window_sum = 0
+
+# for i in range(k):
+#     window_sum += arr[i]
+# max_sum = window_sum
+
+# for i in range(k, len(arr)):
+#     window_sum = window_sum - arr[i-k] + arr[i]
+#     if window_sum > max_sum:
+#         max_sum = window_sum
+# print(max_sum)
+
+
+# s = "I love coding"
+
+# reverse_s = s[::-1]
+
+# print(reverse_s)
+
+# arr = [2,1,5,1,3,2]
+# k = 3
+
+# window_sum = 0
+
+# for i in range(k):
+#     window_sum += arr[i]
+# max_sum = window_sum
+
+# for i in range(k , len(arr)):
+#     window_sum = window_sum - arr[i-k] + arr[i]
+#     if window_sum > max_sum:
+#         max_sum = window_sum
+# print(max_sum)
+
+# nums = [3,2,4]
+# target = 6
+
+# seen={}
+# for i in range(len(nums)):
+
+#     new = nums[i]
+#     comp = target - new
+#     if comp in seen:
+#          print([seen[comp],i])
+#     seen[new] = i
+
+# nums = [1,3,4,2,2]
+
+# freq = set()
+
+# for i in nums:
+#     if i in freq:
+#         print(i)
+#         break
+#     freq.add(i)
+
+# def check_anagram(s,t):
+#     if len(s) != len(t):
+#         return False
+    
+#     s1 = sorted(s)
+#     s2 = sorted(t)
+
+#     if s1 == s2:
+#         return True
+
+# s = "listen"
+# t = "silent"
+
+# if (check_anagram(s,t)):
+#     print("True")
+# else:
+#     print("False")

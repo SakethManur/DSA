@@ -1,0 +1,162 @@
+🚀 8 Fast Coding Tricks for Placement Tests
+
+1️⃣ Use HashMap / Dictionary for Lookup
+
+Whenever you see “find pair”, “frequency”, “first unique”, “duplicates”, use a dictionary.
+
+Example:
+
+nums = [2,7,11,15]
+target = 9
+
+seen = {}
+
+for i, num in enumerate(nums):
+    comp = target - num
+
+    if comp in seen:
+        print(seen[comp], i)
+
+    seen[num] = i
+
+Used in:
+
+Two Sum
+
+Frequency count
+
+Non-repeating character
+
+2️⃣ Use set() to Detect Duplicates
+
+If the question says duplicate elements, use a set.
+
+arr = [1,3,4,2,2]
+
+seen = set()
+
+for num in arr:
+    if num in seen:
+        print(num)
+        break
+    seen.add(num)
+
+Time complexity:
+
+O(n)
+
+3️⃣ Sliding Window for Subarray Problems
+
+If you see:
+
+subarray
+
+contiguous
+
+size k
+
+Use Sliding Window.
+
+arr = [2,1,5,1,3,2]
+k = 3
+
+window_sum = sum(arr[:k])
+max_sum = window_sum
+
+for i in range(k, len(arr)):
+    window_sum = window_sum - arr[i-k] + arr[i]
+    max_sum = max(max_sum, window_sum)
+
+print(max_sum)
+
+4️⃣ Use Python Built-ins (Saves Time)
+
+Instead of writing loops.
+
+Example:
+
+max(arr)
+sum(arr)
+sorted(arr)
+len(arr)
+
+Example:
+
+max([3,7,2,9,4])
+
+Output:
+
+9
+
+5️⃣ Reverse Quickly
+
+Instead of loops.
+
+s[::-1]
+
+Example:
+
+s = "hello"
+print(s[::-1])
+
+Output:
+
+olleh
+
+6️⃣ Frequency Counting Trick
+
+Very common in interviews.
+
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch,0) + 1
+
+Used in:
+
+Anagram
+
+Character frequency
+
+First non-repeating character
+
+7️⃣ Sum Formula Trick
+
+If numbers from 0 → n are given and one is missing:
+
+Formula:
+
+n(n+1)/2
+
+Example:
+
+arr = [3,0,1]
+
+n = len(arr)
+
+expected = n*(n+1)//2
+
+print(expected - sum(arr))
+
+Output:
+
+2
+
+8️⃣ Kadane’s Algorithm (Max Subarray)
+
+Very famous interview question.
+
+arr = [-2,1,-3,4,-1,2,1,-5,4]
+
+curr = arr[0]
+best = arr[0]
+
+for i in range(1, len(arr)):
+    curr = max(arr[i], curr + arr[i])
+    best = max(best, curr)
+
+print(best)
+
+Output:
+
+6
